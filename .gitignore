@@ -1,0 +1,5 @@
+# jar cvf output.zip file1 file2 directory
+jar.exe
+
+*.zip
+*.xpi

@@ -1,10 +1,12 @@
 ## 说明
 
-Chrome 应用商店：<https://chrome.google.com/webstore/detail/memos-bber/cbhjebjfccgchgbmfbobjmebjjckgofe/>
+Memos 的 FireFox 插件，移植自对应的 [Chrome 插件](https://chrome.google.com/webstore/detail/memos-bber/cbhjebjfccgchgbmfbobjmebjjckgofe/)。原作者为 [林木木](https://immmmm.com)
 
-一个通过浏览器插件发布 [Memos](https://usememos.com/) 的插件。基于 iSpeak-bber 修改，原作者为 [DreamyTZK](https://www.antmoe.com/)。
+> Chrome 插件说明：一个通过浏览器插件发布 [Memos](https://usememos.com/) 的插件。基于 iSpeak-bber 修改，原作者为 [DreamyTZK](https://www.antmoe.com/)。
 
 ## 更新日志
+
+2024.07.30 移植至 FireFox
 
 2024.07.21 不兼容更新，已匹配 v0.22.3
 

@@ -1,37 +1,46 @@
 {
-   "manifest_version": 3,
+   "manifest_version": 2,
    "name": "__MSG_extName__",
-   "default_locale": "en",
-   "version": "2024.07.21",
-   "action": {
-      "default_popup": "popup.html",
-      "default_icon": "assets/logo_24x24.png",
-      "default_title": "__MSG_actionTitle__"
-   },
+   "version": "4.7.2",
+   "default_locale": "zh_CN",
    "description": "__MSG_extDescription__",
-   "homepage_url": "https://immmmm.com",
+   "homepage_url": "https://github.com/U1805",
    "icons": {
       "128": "assets/logo.png",
       "16": "assets/logo.png",
       "48": "assets/logo.png"
    },
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "firefox@test.com"
+      }
+   },
    "background": {
-      "service_worker": "js/background.js"
-    },
+      "scripts": ["background.js"],
+      "persistent": false
+   },
    "permissions": [
       "tabs",
       "storage",
       "activeTab",
-      "contextMenus"
+      "contextMenus",
+      "http://*/*",
+      "https://*/*"
    ],
-   "host_permissions": ["http://*/*", "https://*/*"],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "browser_action": {
+      "default_icon": "assets/logo_24x24.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_actionTitle__"
+   },
    "commands": {
       "open-extension": {
-        "description": "Open my extension",
-        "suggested_key": {
+         "description": "Open my extension",
+         "suggested_key": {
             "default": "Ctrl+Shift+F",
             "mac": "MacCtrl+Shift+F"
-        }
+         }
       }
-    }
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnty/jAjBnI36RvEc/gul+C1zzYKXNpMUVWOqtp8br+p9b6wsqn4QQ+01scQKKlx8j+0apIJs8iVdS3rjIBcE4frwdxKCXdWfUewq7NXvxsvNR4cAWN2Jj0a+OBF3GSwSwu+7BDy6koQaJqtdn/qIBnmf+s6/rYyX+xDy6M/d3s8PWrXFGzUo8/3fAHdPmjuExGwllCinB1SikHMQITbOytpr6N8nujKwub4M4nJo2oVgeVLOu3v84n0JIg2puyO3jqlpsH6D4E2ydd6JySzs/ZJbrMszbRaMo9k/23A1+zYEzGd0IDOd16OPwfq6F4DNny6IvREFunyfPoNAX0UNfwIDAQAB"
 }
